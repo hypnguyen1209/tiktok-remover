@@ -33,8 +33,25 @@ if(strpos($url, 'tiktok.com') == true || strpos($url, 'iesdouyin.com') == true |
 echo ']}}}]}';
 }else{
     echo '{
- "messages": [
-   {"text": "Đã xảy ra lỗi!"}
- ]
+  "messages": [
+    {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "button",
+          "text": "Đã xảy ra lỗi!",
+          "buttons": [
+            {
+              "type": "show_block",
+              "block_names": [
+                "start"
+              ],
+              "title": "Thực hiện lại"
+            }
+          ]
+        }
+      }
+    }
+  ]
 }';
 }
