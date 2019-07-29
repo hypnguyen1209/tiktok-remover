@@ -2,9 +2,9 @@
 set_time_limit(0);
 $url = urldecode($_GET['url']);
 if(strpos($url, 'tiktok.com') == true ){
-     $ch = curl_init('http://tiktok-remover.herokuapp.com/tiktok.php?url='.$url);
+     $ch = curl_init('https://tiktok-remover.herokuapp.com/tiktok.php?url='.$url);
     curl_setopt_array($ch, array(
-        CURLOPT_URL => 'http://tiktok-remover.herokuapp.com/tiktok.php?url='.$url,
+        CURLOPT_URL => 'https://tiktok-remover.herokuapp.com/tiktok.php?url='.$url,
         CURLOPT_SSL_VERIFYPEER => false,
         CURLOPT_SSL_VERIFYHOST => false,
         CURLOPT_USERAGENT => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3833.0 Safari/537.36',
