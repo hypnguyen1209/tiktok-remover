@@ -1,7 +1,7 @@
 <?php
 set_time_limit(0);
 $url = urldecode($_GET['url']);
-if(strpos($url, 'tiktok.com') == true ){
+if(strpos($url, 'tiktok.com') == true || strpos($url, 'iesdouyin.com') == true ){
      $ch = curl_init('https://tiktok-remove.herokuapp.com/tiktok.php?url='.$url);
     curl_setopt_array($ch, array(
         CURLOPT_URL => 'https://tiktok-remove.herokuapp.com/tiktok.php?url='.$url,
@@ -18,7 +18,7 @@ if(strpos($url, 'tiktok.com') == true ){
     echo '{
 "title": "'.$data1->title.'",
 "image_url": "'.$data1->poster.'",
-
+"subtitle":"'.$data1->sub.'",
 "buttons": [
 {
 "type": "json_plugin_url",
