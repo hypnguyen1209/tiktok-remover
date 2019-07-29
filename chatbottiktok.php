@@ -1,7 +1,7 @@
 <?php
 set_time_limit(0);
 $url = urldecode($_GET['url']);
-if(strpos($url, 'tiktok.com') == true || strpos($url, 'iesdouyin.com') == true ){
+if(strpos($url, 'tiktok.com') == true || strpos($url, 'iesdouyin.com') == true || strpos($url, 'douyin.com') == true ){
      $ch = curl_init('https://tiktok-remove.herokuapp.com/tiktok.php?url='.$url);
     curl_setopt_array($ch, array(
         CURLOPT_URL => 'https://tiktok-remove.herokuapp.com/tiktok.php?url='.$url,
