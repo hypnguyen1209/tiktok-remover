@@ -2,9 +2,9 @@
 set_time_limit(0);
 $url = urldecode($_GET['url']);
 if(strpos($url, 'tiktok.com') == true ){
-     $ch = curl_init('https://tiktok-remover.herokuapp.com/tiktok.php?url='.$url);
+     $ch = curl_init('https://tiktok-remove.herokuapp.com/tiktok.php?url='.$url);
     curl_setopt_array($ch, array(
-        CURLOPT_URL => 'https://tiktok-remover.herokuapp.com/tiktok.php?url='.$url,
+        CURLOPT_URL => 'https://tiktok-remove.herokuapp.com/tiktok.php?url='.$url,
         CURLOPT_SSL_VERIFYPEER => false,
         CURLOPT_SSL_VERIFYHOST => false,
         CURLOPT_USERAGENT => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3833.0 Safari/537.36',
@@ -22,7 +22,7 @@ if(strpos($url, 'tiktok.com') == true ){
 "buttons": [
 {
 "type": "json_plugin_url",
-"url": "https://tiktok-remover.herokuapp.com/chatbottiktok2.php?url='.$url.'",
+"url": "https://tiktok-remove.herokuapp.com/chatbottiktok2.php?url='.$url.'",
 "title": "Xem Video"
 },{
 "type": "web_url",
