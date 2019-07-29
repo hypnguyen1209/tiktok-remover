@@ -22,7 +22,7 @@ if(strpos($url, 'tiktok.com') == true ){
 "buttons": [
 {
 "type": "json_plugin_url",
-"url": "http://lomdom.xyz/chatbottiktok2.php?url='.$url.'",
+"url": "https://tiktok-remover.herokuapp.com/chatbottiktok2.php?url='.$url.'",
 "title": "Xem Video"
 },{
 "type": "web_url",
