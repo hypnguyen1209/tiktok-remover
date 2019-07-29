@@ -18,7 +18,6 @@ if(strpos($url, 'tiktok.com') == true || strpos($url, 'iesdouyin.com') == true |
     echo '{
 "title": "'.$data1->title.'",
 "image_url": "'.$data1->poster.'",
-"subtitle":"'.$data1->sub.'",
 "buttons": [
 {
 "type": "json_plugin_url",
